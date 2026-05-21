@@ -1,10 +1,13 @@
 numbers = []
 
 while True:
-    num = int(input())
-    if num == -1:
+    value = int(input())
+    if value == -1:
         break
-    numbers.append(num)
+    numbers.append(value)
 
-numbers.sort(reverse=True)
-print(numbers[1])
+if len(numbers) < 2:
+    print("Not enough numbers")
+else:
+    numbers.sort()
+    print(numbers[-2])

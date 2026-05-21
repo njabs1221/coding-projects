@@ -1,25 +1,21 @@
-f = input().upper()
-s = input().upper()
+target = input().strip().upper()
+guess = input().strip().upper()
 
-r = ["."]*5
-fc = [False] * 5
+result = ["."] * len(guess)
+used = [False] * len(target)
 
+for i in range(min(len(target), len(guess))):
+    if guess[i] == target[i]:
+        result[i] = guess[i]
+        used[i] = True
 
-for i in range(len(f)):
-    if f[i] == s[i]:
-        r[i]=s[i]
-        fc[i] = True
-
-
-
-for i in range(len(f)):
-    if r[i] != '.':
+for i in range(len(guess)):
+    if result[i] != ".":
         continue
-    for j in range(len(f)):
-        if not fc[j] and s[i] == f[j]:
-            r[i] = s[i].lower()
-            fc[j] = True
+    for j in range(len(target)):
+        if not used[j] and guess[i] == target[j]:
+            result[i] = guess[i].lower()
+            used[j] = True
             break
-        
 
-print(''.join(r))
+print("".join(result))
