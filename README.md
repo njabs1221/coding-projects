@@ -6,6 +6,8 @@ The original folder was left unchanged. Duplicate files were combined into one c
 
 ## Categories
 
+- `applications-and-mini-projects/` — larger beginner projects that combine multiple concepts.
+- `assembly-and-low-level/` — Pep/assembly-style programs.
 - `algorithms-and-games/` — grid/game-style algorithms.
 - `basics-and-arithmetic/` — introductory input/output, calculators, grade logic, and simple arithmetic.
 - `dictionaries-and-maps/` — dictionary/map exercises.
@@ -14,6 +16,7 @@ The original folder was left unchanged. Duplicate files were combined into one c
 - `math-and-number-theory/` — Fibonacci, prime numbers, Pascal triangle, leap years, formulas, and numerical demos.
 - `matrices-and-linear-algebra/` — matrices, vectors, and norms.
 - `strings-and-text/` — string conversion, character shifting, and vowel counting.
+- `setup-and-tools/` — setup commands and tooling scripts.
 - `word-game/` — Wordle-style dictionary validation and feedback logic.
 - `needs-fix/` — code that is incomplete, has syntax errors, or has clear runtime/logic issues.
 
@@ -28,6 +31,8 @@ The original folder was left unchanged. Duplicate files were combined into one c
 | `strings-and-text/uppercase_words.cpp` | `upper.cpp`, related to `SUB11.cpp` | Same uppercase-conversion goal. `upper.cpp` was kept as the cleaner version; `SUB11.cpp` is kept in `needs-fix/` because it has an off-by-one input issue. |
 
 ## Code catalogue
+
+The original `Coding/Projects` cleanup is catalogued below. The later uploaded files are catalogued in `UPLOADED_CODE_CATALOGUE.md`.
 
 | Original file | Category | Clean repo file | Description | Status |
 |---|---|---|---|---|
